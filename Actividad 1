@@ -1,0 +1,22 @@
+#include <iostream> // Solicitar biblioteca
+#include <string.h> // Solicitar biblioteca
+
+using namespace std;
+
+int main()
+{
+	string nombre; // Variable de la palabra
+	int cantidad; // Variable para la cantidad de caracteres
+	cout << "Este programa lee una palabra o frase dada vuelta" << endl; // Presentacion
+	cout << "Ingrese la palabra o frase: "; // Pedirle al usuario que ingrese la palabra o frase
+	getline(cin,nombre); // Dato guardado de la frase
+	cout << endl; // Separacion
+	cantidad = nombre.length() - 1; // Dato guardado de la longitud de la frase
+	for(int i = cantidad; i > -1; i--) // Sentencia de ciclo
+	{
+		cout << nombre.at(i); // Mostrar en pantalla la palabra dada vuelta
+	}
+	return 0;
+}
+
+
